@@ -1,0 +1,38 @@
+body {
+    background-color: rgba(252, 220, 255, 0.178);
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+header {
+    text-align: center;
+}
+
+#formulario1 div {
+    margin: 10px;
+}
+
+#formulario1 input, #formulario1 select {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+}
+
+#formulario1 label {
+    width: 20%;
+    float: left;
+}
+
+#formulario1 select {
+    width: 40.5%;
+}
+
+footer {
+    text-align: center;
+}
+
+.wraper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+

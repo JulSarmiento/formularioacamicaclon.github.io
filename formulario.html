@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es-co">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-swidt, initial-scale=1.0">
+        <link href="assets/images/styles.css" rel="stylesheet">
+        <title>Formulario de inscripción | Acámica Clon</title>
+    </head>
+    <body>
+        <header>
+            <img src="assets/images/logo-acamica.png" alt="logo de acamica">
+            <h1>Formulario de inscripción</h1>
+        </header>
+        <section class="wraper">
+            <form id="formulario1" action="https://www.htmlquick.com/es/form-result.php?" method="POST">
+                <h2>Datos Personales</h2>
+                <div>
+                    <label for="username">Nombre: </label>
+                    <input id="username" type="text" name="nombre" placeholder="Julian Mario" required >
+                </div> 
+                <div>
+                    <label for="userlastname">Apellido: |</label>
+                    <input id="userlastname" type="text" name="apellido" placeholder="Perez Martinez" required>
+                </div>
+                <div>
+                    <label for="years">Edad: </label>
+                    <input id="years" type="number" name="edad" required min="1" placeholder="Ingrese su edad" required>
+                </div>
+                <div>
+                    <label for="telephone">Teléfono de contacto: </label>
+                    <input id="telephone" type="tel" name="telefono" placeholder="350 1234567">
+                </div>
+                <div>
+                    <label for="useremail">Correo electrónico: </label>
+                    <input id="useremail" type="email" name="correo" placeholder="julianperez@hotmail.com" required>
+                </div>
+                <div>
+                    <label for="pasword">Contraseña: </label>
+                    <input id="pasword" type="password" name="contraseña" minlength="4" placeholder="Mínimo 4 caracteres" required>
+                </div>
+                <div>
+                    <label for="pais">País de procedencia: </label>
+                    <select id="pais">
+                        <option hidden selected value=""></option>
+                        <option value="estadosunidos">Estados Unidos</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="chile">Chile</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="ecuador">Ecuador</option>
+                        <option value="mexico">México</option>
+                        <option value="peru">Perú</option>
+                    </select>
+                </div>
+            </section>
+            <section class="wraper">
+                <h2>Sobre el programa</h2>
+                <div>
+                    <h3>¿A qué carrera deseas inscribirte?</h3>
+                    <di>
+                        <label for="uxui"><input id="uxui" type="radio" name="carrera" value="UX/UI">UX/UI</label>
+                    </di>
+                    <div>
+                        <label for="datascience"><input id="datascience" type="radio" name="carrera" value="Data Science">Data Science</label>
+                    </div>
+                    <div>
+                        <label for="fullstack"><input id="fullstack" type="radio" name="carrera" value="Desarrollo web full stack">Desarrollo Web Full Stack</label>
+                    </div>
+                    <div>
+                        <label for="front"><input id="front" type="radio" name="carrera" value="Front-End">Front-End Avanzado con React</label>
+                    </div>
+                </div>
+                <div>
+                    <h3>¿En modalidad deseas inscribirte?</h3>
+                    <div>
+                        <label for="presen"><input id="presen" type="radio" name="modalidad" value="presencial"> Presencial</label>
+                    </div>
+                    <div>
+                        <label for="virtual"><input id="virtual" type="radio" name="modalidad" value="virtual">Virtual</label>
+                    </div>
+                </div>
+                <div>
+                    <h3>¿Éstas trabajando actualmente?</h3>
+                    <div>
+                        <label for="yes"><input id="yes" type="radio" name="trabajando" value="si">Si</label>
+                    </div>
+                    <div>
+                        <label for="no"><input id="no" type="radio" name="trabajando" value="no">No</label>
+                    </div>
+                </div>
+                <div>
+                    <h3>Cuéntanos sobre tí: </h3>
+                    <textarea maxlength="300" placeholder="Máximo 300 caracteres"></textarea>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <div>
+                <button type="submit" form="formulario1">Enviar</button>
+                <button type="reset" form="formulario1">Limpiar</button>
+            </div>
+            <h6>Elaborado por <a target="_blank" href="https://www.instagram.com/julsarmiento/">Julieth Sarmiento</a></h6>
+        </footer>
+    </body>
+</html>
